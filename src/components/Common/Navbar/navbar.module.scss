@@ -1,0 +1,86 @@
+.category{
+    flex-basis: 30%;
+    padding: 15px;
+    border: 1px solid var(--textHover);
+    border-radius: 5px;
+    text-align: center;
+    background-color: #fff;
+    cursor: pointer;
+    position: relative;
+
+    & .icon{
+        font-size: 1rem;
+        color: var(--textHover);
+        margin-right: 5px;
+    }
+    & .text{
+        color: var(--textHover);
+        font-weight: 600;
+        font-size: 1rem;
+        margin-left: 5px;
+        text-transform: uppercase;
+    }
+    &:hover{
+        background-color: var(--textHover);
+    }
+    &:hover .icon{
+        color: #fff;
+    }
+    &:hover .text{
+        color: #fff;
+    }
+
+    & .box{
+        position:absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        z-index: 1;
+        border-radius: 5px;
+        box-shadow: var(--boxShadow);
+        display: none;
+        animation: moveFromTop linear .2s;
+
+        & .list{
+            & .item{
+                text-align: left;
+                padding: 15px 20px;
+                & .link{
+                    display: block;
+                    height: 100%;
+                    font-size: var(--textSize);
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+    &:hover .box{
+        display: block;
+    }
+}
+
+
+.navbar{
+    flex: 1;
+    & .list{
+        display: flex;
+        align-items: center;
+
+        & .item{
+            margin: 0 15px;
+            & .link{
+                font-size: var(--textSize);
+                font-weight: 600;
+
+                &.active{
+                    color: var(--textHover);
+                }
+            }
+        }
+    }
+}
+
+@keyframes moveFromTop {
+    from { transform: translateY(-10px) }
+}

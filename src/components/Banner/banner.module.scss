@@ -1,0 +1,9 @@
+:global {
+    @import 'node_modules/slick-carousel/slick/slick';
+}
+
+.slider{
+    & .img{
+        width: 100%;
+    }
+}

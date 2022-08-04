@@ -1,0 +1,104 @@
+body{
+  font-family: 'Poppins', sans-serif;
+}
+
+:root{
+  --dominantColor: radial-gradient( circle farthest-corner at 10% 20%,  rgba(14,174,87,1) 0%, rgba(12,116,117,1) 90% );
+  --textHover: #5111F3;
+  --hightlightColor: #A20A03;
+  --textColor: #020204;
+  --textSize: 0.9rem;
+  --boxShadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+ul, li{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a{
+  text-decoration: none;
+  color: #222;
+}
+
+h1{
+  margin: 0;
+}
+
+
+.btn-grad {background-image: linear-gradient(to right, #AA076B 0%, #61045F  51%, #AA076B  100%)}
+.btn-grad {
+   padding: 15px 45px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   box-shadow: 0 0 20px #eee;
+   border-radius: 10px;
+   display: block;
+ }
+
+ .btn-grad:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+ }
+
+ a:hover{
+   color: var(--textHover);
+ }
+
+
+ .conversation{
+   display: inline-flex;
+   align-items: center;
+   background-color: #fff;
+   transition: all linear .1s;
+   cursor: pointer;
+   margin-right: 10px;
+
+ }
+
+ .conversation:hover{
+   background-color: #ccc;
+ }
+
+ .conversation_img{
+   width: 50px;
+   height: 50px;
+   margin-right: 5px;
+ }
+
+
+ .messenger{
+
+  display: flex;
+  justify-content: left;
+ }
+
+ .messenger.own{
+
+  justify-content: right;
+ }
+
+ .messenger_img{
+   margin-right: 10px;
+   width: 40px;
+   height: 40px;
+ }
+
+ .messenger_text{
+   max-width: 500px;
+   background-color: blue;
+   color: #fff;
+   border-radius: 20px;
+   padding: 10px;
+ }
+
+ .messenger.own .messenger_text{
+   background-color: #ccc;
+   color: #000;
+ }
+
